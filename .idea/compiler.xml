@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-client" />
+        <module name="gateway-zuul" />
+        <module name="server-surport" />
+        <module name="eureka-service" />
+        <module name="server-caller" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka-client" target="1.8" />
+      <module name="eureka-service" target="1.8" />
+      <module name="gateway-zuul" target="1.8" />
+      <module name="server-caller" target="1.8" />
+      <module name="server-surport" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="eureka-client" options="-parameters" />
+      <module name="eureka-service" options="-parameters" />
+      <module name="gateway-zuul" options="-parameters" />
+      <module name="server-caller" options="-parameters" />
+      <module name="server-surport" options="-parameters" />
+    </option>
+  </component>
+</project>

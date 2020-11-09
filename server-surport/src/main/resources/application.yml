@@ -1,0 +1,17 @@
+
+
+spring:
+  application:
+    name: client-server-surport
+
+#服务端口
+server:
+  port: 10215
+
+# 注册中心地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:10211/eureka/
+  instance:
+    prefer-ip-address: true
